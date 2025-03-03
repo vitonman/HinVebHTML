@@ -7,8 +7,9 @@ body {
     background: #413f3b url("hinvebhtml/images/bg.jpg");
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 90%;
-    margin: 0px;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 a {
     color: #b5c1ad;
@@ -35,17 +36,23 @@ a:hover {
     padding: 45px 0px 0px 0px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper {
-    width: 960px;
-    margin: 0px auto;
-    background-image: url("../images/bg-triangle.png");
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
-    text-align: left;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 960px;
+    margin: 0 auto;
+    background-image: url("../images/bg-triangle.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
 }
+ 
 
 .logo {
     margin-bottom: 20px;
@@ -72,10 +79,11 @@ h1 {
     line-height: 1.4em;
 }
 .main-story {
+    flex: 1;
     background-image: url("../images/triangles.png");
     background-repeat: no-repeat;
     background-position: 122px 142px;
-    height: 570px;
+    padding-bottom: 20px; 
 }
 .more-articles {
     border-top: 1px solid #ffffff;
@@ -90,10 +98,11 @@ h1 {
     border-bottom: none;
 }
 .footer {
+    background: rgba(0, 0, 0, 0.2);
     width: 100%;
     text-align: center;
-    background: rgba(0, 0, 0, 0.2);
     padding: 10px 0;
+    position: relative;
 }
 
 .main-story {
