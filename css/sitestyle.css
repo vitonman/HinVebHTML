@@ -4,7 +4,7 @@
 }
 body {
     color: #ffffff;
-    background: #413f3b url("hinvebhtml/images/bg.jpg");
+    background: #413f3b url("/images/bg.jpg");
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 90%;
     text-align: center;
@@ -21,7 +21,7 @@ a:hover {
 }
 
 .header {
-    background-image: url("../images/bg-header.jpg");
+    background-image: url("/images/bg-header.jpg");
     padding: 0px 0px 0px 0px;
     height: 100px;
     position: fixed;
@@ -48,7 +48,7 @@ html, body {
     min-height: 100vh;
     width: 960px;
     margin: 0 auto;
-    background-image: url("../images/bg-triangle.png");
+    background-image: url("/images/bg-triangle.png");
     background-repeat: no-repeat;
     background-position: 0px 0px;
 }
@@ -80,7 +80,7 @@ h1 {
 }
 .main-story {
     flex: 1;
-    background-image: url("../images/triangles.png");
+    background-image: url("/images/triangles.png");
     background-repeat: no-repeat;
     background-position: 122px 142px;
     padding-bottom: 20px; 
@@ -97,30 +97,116 @@ h1 {
 .more-articles p:last-child {
     border-bottom: none;
 }
+
 .footer {
     background: rgba(0, 0, 0, 0.2);
     width: 100%;
-    text-align: center;
     padding: 10px 0;
     position: relative;
-}
-
-.main-story {
-    flex: 1;
+    text-align: right;
 }
 
 .footer p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 75%;
     text-align: right;
+    margin: 0;
 }
 .footer a {
     color: #807c72;
-    
 }
+
 
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+.container_12 {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.news-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.date {
+    text-align: center;
+    font-weight: bold;
+    color: #b5c1ad;
+}
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.news-article {
+    width: 45%;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.news-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.news-article h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #b5c1ad;
+}
+.news-article p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.news-article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #b5c1ad;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-article a:hover {
+    color: #ffffff;
+}
+
+.back-link {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #b5c1ad;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 40px; 
+    max-width: 960px; 
+    margin: auto; 
+}
+
+.flex-item {
+    flex: 1; /* Все колонки занимают одинаковое пространство */
+    min-width: 250px; /* Минимальная ширина колонки */
+    max-width: 30%; /* Делаем три колонки */
+    text-align: justify; /* Выровнять текст по ширине */
 }
