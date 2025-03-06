@@ -276,3 +276,48 @@ html, body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+/* archive  */
+
+.archive-description {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.archive-section {
+    margin: 20px 0;
+}
+
+.archive-section h3 {
+    font-size: 1.3em;
+    color: #b5c1ad;
+    border-bottom: 1px solid #807c72;
+    padding-bottom: 5px;
+}
+
+.archive-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.archive-section li {
+    margin: 5px 0;
+}
+
+.archive-section a {
+    color: #b5c1ad;
+    text-decoration: none;
+}
+
+.archive-section a:hover {
+    color: white;
+}
+
+blockquote {
+    font-style: italic;
+    color: #b5c1ad;
+    border-left: 4px solid #807c72;
+    padding-left: 10px;
+    margin: 15px 0;
+}
