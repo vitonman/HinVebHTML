@@ -6,6 +6,7 @@
     <title>Latest News</title>
     <link rel="stylesheet" href="/css/960_12_col.css">
     <link rel="stylesheet" href="/css/sitestyle.css">
+    <script src="/script.js"></script>
 </head>
 <body>
     <div class="header">
@@ -47,7 +48,38 @@
         
     </div>
     <div class="footer">
-        <p class="grid_12"><a href="">Legal Information</a> | <a href="">Privacy Policy</a> | <a href="">Copyright &copy; Pedal Faster 2025</a></p>
+        <p>
+            <a href="#" class="open-popup" data-popup="legal">Legal Information</a> |
+            <a href="#" class="open-popup" data-popup="privacy">Privacy Policy</a> |
+            <a href="#" class="open-popup" data-popup="copyright">Copyright &copy; Pedal Faster 2025</a>
+        </p>
+    </div>
+    
+    <!-- Popup containers -->
+    <div id="popup-legal" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Legal Information</h2>
+            <p>Welcome to Pedal Faster. This website is a project for the TiTge24 course and is intended for educational purposes only...</p>
+        </div>
+    </div>
+    
+    <div id="popup-privacy" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. This website does not collect or store any personal data from visitors...</p>
+        </div>
+    </div>
+    
+    <div id="popup-copyright" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Copyright Information</h2>
+            <img src="/images/logo.png" alt="Pedal Faster - The modern bicycle magazine" width="216" height="37" class="logo" />
+            <img src="/images/tthk_logo.png" alt="TTHK LOGO" width="216" height="37" class="logo" />
+            <p>All content on this website, including text, images, and design, is © 2025 Pedal Faster unless otherwise stated...</p>
+        </div>
     </div>
 
    

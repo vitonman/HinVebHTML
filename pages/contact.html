@@ -6,6 +6,7 @@
     <title>About Me</title>
     <link rel="stylesheet" href="/css/960_12_col.css">
     <link rel="stylesheet" href="/css/sitestyle.css">
+    <script src="/script.js"></script>
 </head>
 <body>
     <div class="header">
@@ -22,8 +23,7 @@
 
     <div class="wrapper">
         <div class="container_12">
-            <h1>About This Project</h1>
-            <p class="date">March 2025</p>
+            <h1>Contact</h1>
             <div class="news-grid">
              
                 <div class="news-article">
@@ -32,10 +32,10 @@
                 <div class="news-article">
                     
                     <p>
-                        Hi, I'm a student currently working on a web development project as part of the **TiTge24** course. This page is part of my coursework, where I apply HTML, CSS, and responsive design principles.
+                        Hi, I'm <strong>Vitali Maksimov</strong>, a student at the <strong>TiTge24</strong> course, currently studying <strong>Veebirakenduste loomise alused</strong>. This website is part of my coursework, where I apply web development skills.
                     </p>
                     <p>
-                        My goal with this project is to create a visually appealing and well-structured website, improving my skills in front-end development. Through this, I'm learning how to handle layouts, positioning, styling, and overall site structure.
+                        My goal with this project is to build a structured, visually appealing website while improving my front-end development skills. Throughout this project, I'm focusing on layout design, responsive styling, and overall user experience.
                     </p>
                     <h2>Skills Demonstrated</h2>
                     <ul>
@@ -45,8 +45,11 @@
                         <li>Improving UI/UX principles</li>
                     </ul>
                     <p>
-                        This website is a demonstration of my ability to work with structured code, styling, and adaptive design. Thanks for checking it out!
+                        If you have any questions or want to collaborate, feel free to reach out to me!
                     </p>
+                    <h2>Contact Information</h2>
+                    <p>Email: <a href="mailto:vitalimaksimov@gmail.com">vitalimaksimov@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/vitonman/HinVebHTML" target="_blank">github.com/vitonman/HinVebHTML</a></p>
                 </div>
                 <p>
                     <a href="/index.html">Back to Home</a>
@@ -56,7 +59,38 @@
     </div>
 
     <div class="footer">
-        <p class="grid_12"><a href="">Legal Information</a> | <a href="">Privacy Policy</a> | <a href="">Copyright &copy; Pedal Faster 2025</a></p>
+        <p>
+            <a href="#" class="open-popup" data-popup="legal">Legal Information</a> |
+            <a href="#" class="open-popup" data-popup="privacy">Privacy Policy</a> |
+            <a href="#" class="open-popup" data-popup="copyright">Copyright &copy; Pedal Faster 2025</a>
+        </p>
+    </div>
+    
+    <!-- Popup containers -->
+    <div id="popup-legal" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Legal Information</h2>
+            <p>Welcome to Pedal Faster. This website is a project for the TiTge24 course and is intended for educational purposes only...</p>
+        </div>
+    </div>
+    
+    <div id="popup-privacy" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. This website does not collect or store any personal data from visitors...</p>
+        </div>
+    </div>
+    
+    <div id="popup-copyright" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Copyright Information</h2>
+            <img src="/images/logo.png" alt="Pedal Faster - The modern bicycle magazine" width="216" height="37" class="logo" />
+            <img src="/images/tthk_logo.png" alt="TTHK LOGO" width="216" height="37" class="logo" />
+            <p>All content on this website, including text, images, and design, is © 2025 Pedal Faster unless otherwise stated...</p>
+        </div>
     </div>
 </body>
-</html>
+</html> 
